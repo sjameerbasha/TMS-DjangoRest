@@ -127,13 +127,13 @@ The key components of the system include:
     "username": "your_username",
     "password": "your_password"
   }
-
+  ```
   **Request Body**:
   ```json
   {
     "token": "your_auth_token"
   }
-
+  ```
 - **POST** `/api/auth/register/`: Allows users to register by providing their username, password, email, and role.
 
   **Request Body**:
@@ -144,14 +144,15 @@ The key components of the system include:
     "email": "new@site.com",
     "role": "Client"
   }
- 
+ ```
+
   **Request Body**:
   ```jsont
   {
     "username": "newuser",
     "role": "Client"
   }
-
+```
 
 ### **Database Schema**
 
