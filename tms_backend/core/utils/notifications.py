@@ -55,7 +55,6 @@ def send_task_assignment_email(to_email, task_title, assigned_by):
         # Close the SMTP connection
         server.quit()
 
-        print('Email sent')
         return {"status_code": 200, "message": "Email sent successfully."}
 
     except smtplib.SMTPException as e:
