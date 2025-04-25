@@ -11,8 +11,10 @@ The Task Management System (TMS) is a web application built with Django, designe
 - **Project Management**: Creation, viewing, and management of projects.
 - **Task Management**: Assignment of tasks, setting of task statuses (To Do, In Progress, Done).
 - **Commenting System**: Each task has a commenting feature for team collaboration.
+- **Email Notifications** : User will be notified with an email when a task is assigned.
 
----
+    ![email_notification](https://github.com/user-attachments/assets/7e9161a8-88ea-4729-b51a-7398260d065d)
+
 
 ## GitHub Clone Instructions
 
