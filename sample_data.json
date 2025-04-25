@@ -1,0 +1,142 @@
+{
+    "users": [
+        {
+            "username": "admin_user",
+            "password": "adminpass123",
+            "password2": "adminpass123",
+            "email": "admin@example.com",
+            "role": "Admin"
+        },
+        {
+            "username": "pm_user",
+            "password": "pmpass123",
+            "password2": "pmpass123",
+            "email": "pm@example.com",
+            "role": "Project Manager"
+        },
+        {
+            "username": "lead_user",
+            "password": "leadpass123",
+            "password2": "leadpass123",
+            "email": "lead@example.com",
+            "role": "Project Lead"
+        },
+        {
+            "username": "dev_user",
+            "password": "devpass123",
+            "password2": "devpass123",
+            "email": "dev@example.com",
+            "role": "Developer"
+        },
+        {
+            "username": "client_user",
+            "password": "clientpass123",
+            "password2": "clientpass123",
+            "email": "client@example.com",
+            "role": "Client"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Website Redesign",
+            "description": "Redesign the corporate website",
+            "user_ids": [
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "name": "Mobile App Launch",
+            "description": "Launch the new mobile app",
+            "user_ids": [
+                3,
+                4
+            ]
+        }
+    ],
+    "tasks": [
+        {
+            "title": "Create wireframes",
+            "description": "Design homepage wireframes",
+            "status": "To Do",
+            "project": 1,
+            "assigned_to": 3,
+            "created_by": 2
+        },
+        {
+            "title": "Setup backend",
+            "description": "Initialize Django backend",
+            "status": "In Progress",
+            "project": 1,
+            "assigned_to": 4,
+            "created_by": 3
+        },
+        {
+            "title": "Test API",
+            "description": "Write unit tests for the API",
+            "status": "To Do",
+            "project": 2,
+            "assigned_to": 4,
+            "created_by": 2
+        }
+    ],
+    "comments": [
+        {
+            "content": "Wireframes look good, proceed to design.",
+            "task": 1,
+            "project": 1,
+            "user": 2,
+            "created_by": 2
+        },
+        {
+            "content": "Backend setup complete.",
+            "task": 2,
+            "project": 1,
+            "user": 4,
+            "created_by": 4
+        },
+        {
+            "content": "Waiting for API documentation.",
+            "task": 3,
+            "project": 2,
+            "user": 5,
+            "created_by": 5
+        }
+    ],
+    "api_endpoints": {
+        "auth": {
+            "login": "/api/auth/login/",
+            "register": "/api/auth/register/"
+        },
+        "users": {
+            "list": "/api/users/",
+            "detail": "/api/users/{id}/",
+            "create": "/api/users/",
+            "update": "/api/users/{id}/",
+            "delete": "/api/users/{id}/"
+        },
+        "projects": {
+            "list": "/api/projects/",
+            "detail": "/api/projects/{id}/",
+            "create": "/api/projects/",
+            "update": "/api/projects/{id}/",
+            "delete": "/api/projects/{id}/"
+        },
+        "tasks": {
+            "list": "/api/tasks/",
+            "detail": "/api/tasks/{id}/",
+            "create": "/api/tasks/",
+            "update": "/api/tasks/{id}/",
+            "delete": "/api/tasks/{id}/"
+        },
+        "comments": {
+            "list": "/api/comments/",
+            "detail": "/api/comments/{id}/",
+            "create": "/api/comments/",
+            "update": "/api/comments/{id}/",
+            "delete": "/api/comments/{id}/"
+        }
+    }
+}
