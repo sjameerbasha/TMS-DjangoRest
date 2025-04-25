@@ -18,39 +18,46 @@ The Task Management System (TMS) is a web application built with Django, designe
 
 ### Step 1: Clone the Repository
 To clone this repository, run the following command in your terminal:
-
 ```bash
-git clone https://github.com/your-username/tms.git
+git clone https://github.com/sjameerbasha/TMS-DjangoRest.git
 ```
+
 ### Step 2: Set Up the Virtual Environment
-- Navigate to the project directory:
-    ```bash
-    cd tms
-    ```
-- Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    venv\Scripts\activate
-    ```
+Navigate to the below directory:
+```bash
+cd TMS-DjangoRest-main
+```
+Create and activate a virtual environment:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
 ### Step 3: Install Dependencies
 Run the following command to install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Migrate the Database
+### Step 4: Navigate to the project directory
+Navigate to the project directory:
+```bash
+cd tms_backend
+```
+
+### Step 5: Migrate the Database
 Run the following commands to apply database migrations:
 ```bash
 python manage.py migrate
 ```
 
-### Step 5: Create a Superuser
+### Step 6: Create a Superuser
 To access the admin panel and perform CRUD operations, create a superuser account:
 ```bash
 python manage.py createsuperuser
 ```
 
-### Step 6: Run the Development Server
+### Step 7: Run the Development Server
 Start the development server with:
 ```bash
 python manage.py runserver
