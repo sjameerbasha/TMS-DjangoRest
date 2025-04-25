@@ -136,7 +136,7 @@ The key components of the system include:
   ```
 - **POST** `/api/auth/register/`: Allows users to register by providing their username, password, email, and role.
 
-  **Request Body**:
+   **Request Body**:
   ```json
   {
     "username": "newuser",
@@ -144,15 +144,16 @@ The key components of the system include:
     "email": "new@site.com",
     "role": "Client"
   }
- ```
-
+  ```
   **Request Body**:
-  ```jsont
+  ```json
   {
     "username": "newuser",
     "role": "Client"
   }
-```
+  ```
+
+---
 
 ### **Database Schema**
 
